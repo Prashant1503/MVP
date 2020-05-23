@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".View.activities.splashActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/splash_screen"
+            android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            app:fontFamily=""
+            android:fontFamily="@font/graphiksemibold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_description"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/graphikregular"
+            android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/contentGetStarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            app:fontFamily="@font/graphiksemibold"
+            android:text="@string/started_title_txt"
+            android:textAlignment="center"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/getStartedBtn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="14dp"
+            android:src="@drawable/forward_icon"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>

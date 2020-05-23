@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--            1st layout for country name-->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/countryNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Country name"
+                    android:fontFamily="@font/graphiksemibold"
+                    android:textSize="19sp"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--            2nd layout for 1st row-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+<!--                1st child layout for confrimed cases-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cases_txt"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/colorLightRed"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/country_confirmedCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/infected_count_txt"
+                        android:layout_marginStart="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDarkRed"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:layout_marginStart="10dp"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+<!--                2nd child layout for today cases-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ConfirmedToday :"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/colorLightRed"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/country_newConfirmedCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/infected_count_txt"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorRed"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--            3rd layout for 2nd row cases-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <!--                1st child layout for confrimed cases-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/death_title_txt"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/colorGrey"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/country_DeathCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/infected_count_txt"
+                        android:layout_marginStart="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDarkGrey"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:layout_marginStart="10dp"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <!--                2nd child layout for today cases-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/death_today_txt"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/colorGrey"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/country_DeathtodayCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/infected_count_txt"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorDarkGrey"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--            4th layout for 3rd row cases..-->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <!--                1st child layout for recovered cases-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recovered_title_txt"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/colorLightGreen"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/country_RecoveredCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/infected_count_txt"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorGreen"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:layout_marginStart="10dp"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <!--                2nd child layout for today cases-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RecoveredToday"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/colorLightGreen"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/country_CriticalTodayCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/infected_count_txt"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorGreen"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

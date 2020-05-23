@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">CovidApp</string>
+
+    <!--     screen string-->
+    <string name="splash_title">COVID-19</string>
+    <string name="splash_description">The coronavirus may be with us for a long time, and we have learn to live with it rather than hope to vanquish its threat.</string>
+    <string name="started_title_txt">Get Started</string>
+    <string name="active_txt">ACTIVE</string>
+    <string name="confirmed_txt">CONFIRMED</string>
+    <string name="recoverd__txt">RECOVERED</string>
+    <string name="death_txt">DEATH</string>
+    <string name="infected_count_txt">0</string>
+    <string name="recovered_count_txt">47,000</string>
+    <string name="death_count_txt">90,000</string>
+    <string name="global_txt">Global Situation</string>
+    <string name="symptoms_title_txt">Symptoms</string>
+    <string name="view_txt">View All</string>
+    <string name="know_more_txt">To Know More About COVID-19 </string>
+    <string name="info_btn_txt">More Info</string>
+    <string name="snackbar_title_txt">Could Not found..</string>
+    <string name="search_bar_hint_txt">Search By Country name</string>
+
+<!--    country wise ..-->
+    <string name="country_name_txt">Country name</string>
+    <string name="cases_txt">Confirmed :</string>
+    <string name="critical_txt">Critical :</string>
+    <string name="today_txt">Today :</string>
+    <string name="active_title__txt">Active :</string>
+    <string name="death_title_txt">Death :</string>
+    <string name="death_today_txt">Death today :</string>
+    <string name="recovered_title_txt">Recovered :</string>
+
+
+    <!--    symptoms title-->
+    <string name="fever_txt">Fever</string>
+    <string name="cough_txt">Cough</string>
+    <string name="breath_txt">Breath</string>
+    <string name="shore_txt">Sore Throat</string>
+    <string name="headache_txt">Headache</string>
+
+    <!--    country wise string-->
+    <string name="country_wise_title_txt">Country Wise</string>
+    <string name="india_title_txt">India</string>
+
+
+</resources>
